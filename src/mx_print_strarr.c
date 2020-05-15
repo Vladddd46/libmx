@@ -1,7 +1,7 @@
 #include "libmx.h"
 
 
-void mx_print_strarr(char **arr, const char *delim){
+void mx_print_strarr(char **arr, char *delim){
 
 
 	int i = 0;

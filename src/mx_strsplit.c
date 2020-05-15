@@ -1,6 +1,6 @@
 #include "libmx.h"
 
-char **mx_strsplit(const char *s, char c){
+char **mx_strsplit(char *s, char c){
 
 	//считаем длинну для выдиления памяти под массив
 	int counter1 = 0;

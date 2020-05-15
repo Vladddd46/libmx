@@ -1,7 +1,7 @@
 #include "libmx.h"
 
 
-void *mx_memchr(const void *s, int c, size_t n)
+void *mx_memchr(void *s, int c, size_t n)
 {
 	unsigned long len = (unsigned long)n;
 	unsigned char *s1 = (unsigned char *)s;

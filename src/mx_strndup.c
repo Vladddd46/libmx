@@ -1,6 +1,6 @@
 #include "libmx.h"
 
-char *mx_strndup(const char *s1, size_t n){
+char *mx_strndup(char *s1, size_t n){
 
 	char *memory = mx_strnew(n);
 	

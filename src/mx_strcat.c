@@ -1,7 +1,7 @@
 #include "libmx.h"
 
 
-char *mx_strcat(char *restrict s1, const char *restrict s2){
+char *mx_strcat(char *restrict s1, char *restrict s2){
 	
 	*s1 = *(char *)s1;
 

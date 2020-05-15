@@ -1,6 +1,6 @@
 #include "libmx.h"
 
-char *mx_strstr(const char *haystack, const char *needle){
+char *mx_strstr(char *haystack, char *needle){
 
 	//считаем длинну needle для того, чтобы
 	//потом пройтись по ней цыклом

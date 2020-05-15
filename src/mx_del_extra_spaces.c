@@ -1,7 +1,12 @@
 #include"libmx.h"
 
-char *mx_del_extra_spaces(const char *str) {
-	if(str == NULL) return NULL;
+/*
+ * Deletes extra whitespaces between word;
+ * Word is sequence of chars separated by whitespace.
+ */
+char *mx_del_extra_spaces(char *str) {
+	if(str == NULL) 
+        return NULL;
 	int len = mx_strlen(str);
 	char *a = mx_strnew(len);
 	int j = 0, i = 0;

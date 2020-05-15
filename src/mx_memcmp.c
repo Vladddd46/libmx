@@ -1,6 +1,6 @@
 #include "libmx.h"
 
-int mx_memcmp(const void *s1, const void *s2, size_t n) {
+int mx_memcmp(void *s1, void *s2, size_t n) {
     unsigned long len =(unsigned long)n;
 
 	char *a = (char *)s1;

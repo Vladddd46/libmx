@@ -1,6 +1,6 @@
 #include "libmx.h"
 
-void *mx_memmem(const void *big, size_t big_len, const void *little, size_t little_len) {
+void *mx_memmem(void *big, size_t big_len, void *little, size_t little_len) {
 
 	
 	unsigned long blen =(unsigned long)big_len;

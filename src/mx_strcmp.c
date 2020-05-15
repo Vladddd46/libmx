@@ -1,6 +1,6 @@
 #include "libmx.h"
 
-int mx_strcmp(const char *s1, const char *s2){
+int mx_strcmp(char *s1, char *s2){
 
     int counter = 0;
     while (s1[counter] == s2[counter])

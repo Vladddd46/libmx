@@ -1,6 +1,6 @@
 #include "libmx.h"
 
-void *mx_memmove(void *dst, const void *src, size_t len) {
+void *mx_memmove(void *dst, void *src, size_t len) {
 	unsigned long len1 =(unsigned long)len;
 
 	char *a = (char*) dst;

@@ -1,6 +1,6 @@
 #include"libmx.h"
 
-char *mx_strjoin(const char *s1, const char *s2) {
+char *mx_strjoin(char *s1, char *s2) {
 	if(s1 == NULL && s2 != NULL) {
 		int len = mx_strlen(s2);
 		char *result = mx_strnew(len);

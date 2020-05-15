@@ -1,6 +1,6 @@
 #include"libmx.h"
 
-unsigned long mx_hex_to_nbr(const char *hex) {
+unsigned long mx_hex_to_nbr(char *hex) {
     int i = 0;
     unsigned long result = 0;
     long  multipl = 1;

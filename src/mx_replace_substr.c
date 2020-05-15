@@ -1,6 +1,6 @@
 #include "libmx.h"
 
-char *mx_replace_substr(const char *str, const char *sub, const char *replace){
+char *mx_replace_substr(char *str, char *sub, char *replace){
 
 	//длинна str,sub,replace
 	int len_str = mx_strlen(str);	

@@ -5,8 +5,8 @@
 #include <stdbool.h>
 #include <string.h>
 
-char *mx_strnew(const int size);
-char *mx_file_to_str(const char *file){
+char *mx_strnew(int size);
+char *mx_file_to_str(char *file){
 	
 	char buff[1];
 

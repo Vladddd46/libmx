@@ -1,8 +1,8 @@
 #include <stdlib.h>
-char *mx_strnew(const int size);
-int mx_strlen(const char *s);
+char *mx_strnew(int size);
+int mx_strlen(char *s);
 
-char *mx_strtrim(const char *str){
+char *mx_strtrim(char *str){
 
 	while(str){
 	int len_str = mx_strlen(str);

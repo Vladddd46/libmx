@@ -1,6 +1,6 @@
 #include "libmx.h"
 
-char *mx_strdup(const char *str){
+char *mx_strdup(char *str){
 
 	int length = mx_strlen(str);
 	char *memory = mx_strnew(length);

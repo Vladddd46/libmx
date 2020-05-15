@@ -1,48 +1,35 @@
 #include "libmx.h"
 
-int mx_count_substr(const char *str, const char *sub){
+/*
+ * Counts number of occurrences of substring in a string.
+ */
+int mx_count_substr(char *str, char *sub) {
+    if (str == NULL || sub == NULL)
+        return -1;
 
-	if (str == NULL || sub == NULL){
-		return -1;
-	}
+    int len_sub = mx_strlen(sub);
+    int i = 0;
+    int counter = 0;
+    
+    // Walk through each symbol in str.
+    while(str[i]){
 
-	//считаем длинну needle для того, чтобы
-	//потом пройтись по ней цыклом
-	int len_sub = mx_strlen(sub);
-
-	
-	int i = 0;
-	int counter = 0;
-	//проходим по каждому символу str
-	while(str[i]){
-
-		//совпадение i-елемента str и нулевого елемента sub
-		if (str[i] == sub[0]){
-
-			//цикл, который проверяет дальнейшую схожесть символов
-			int j = 0;
-			int tmp = i;
-			while (str[tmp] == sub[j]){
-
-				//строка sub найдена в str
-				if (j == len_sub - 1){
-					counter++;
-					break;
-				}
-				j++;
-				tmp++;
-			}
-		}
-		i++;
-	}
-	return counter;
+        // first symbols in sub and str are identic.
+        if (str[i] == sub[0]) {
+            // further check of symbols identity.
+            int j = 0;
+            int tmp = i;
+            while (str[tmp] && sub[j] && str[tmp] == sub[j]) {
+                // if j == lenghth of sub => match is found.
+                if (j == len_sub - 1){
+                    counter++;
+                    break;
+                }
+                j++;
+                tmp++;
+            }
+        }
+        i++;
+    }
+    return counter;
 }
-
-
-
-
-
-
-
-
-
