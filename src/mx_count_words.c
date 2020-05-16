@@ -1,4 +1,4 @@
-#include"libmx.h"
+#include "libmx.h"
 
 /*
  * Count words in string.

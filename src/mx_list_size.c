@@ -1,20 +1,18 @@
 #include "libmx.h"
 
-int mx_list_size(t_list *list){
+/*
+ * Counts size of linked list.
+ */
+int mx_list_size(t_list *list) {
+    if (list == NULL)
+        return -1;
 
-	if (list == NULL){
-		return -1;
-	}
-
-	int size = 0;
-
-	while (list->next!= NULL){
-		list = list->next;
-		size++;
-	}
-	size++;
-
-	return size;
+    int size = 0;
+    while (list){
+        list = list -> next;
+        size++;
+    }
+    return size;
 }
 
 

@@ -59,7 +59,9 @@ SRC		=	mx_binary_search.c \
 	mx_strsplit.c \
 	mx_strstr.c \
 	mx_strtrim.c \
-	mx_swap_char.c
+	mx_swap_char.c \
+	mx_string_copy.c
+
 
 SRCS	=	$(addprefix $(SRCD)/, $(SRC))
 OBJS	=	$(addprefix $(OBJD)/, $(SRC:%.c=%.o))

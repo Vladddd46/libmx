@@ -5,6 +5,7 @@
 #include <stdbool.h>
 #include <string.h>
 
+
 typedef struct s_list {
 	void *data;
 	struct s_list *next;
@@ -63,5 +64,5 @@ void *mx_realloc(void *ptr, size_t size);
 int mx_read_line(char **lineptr, int buf_size, char delim,  int fd);
 void *mx_memmove(void *dst,  void *src, size_t len);
 void mx_strdel(char **str);
-
+char *mx_string_copy(char *str);
 
