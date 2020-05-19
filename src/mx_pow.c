@@ -1,18 +1,18 @@
 #include "libmx.h"
 
+/*
+ * Returns the result of pow times 
+ * multiplying the number n by itself
+ */
 double mx_pow(double n, unsigned int pow){
-
-	if (pow == 0){
-		return 1;
-	}
-	
-    double core_number = n;
+    if (pow == 0)
+        return 1;
+    double result = n;
 
     while(pow != 1){
-        n *= core_number;
+        result *= n;
         pow--;
     }
-
-    return n;
+    return result;
 }
 

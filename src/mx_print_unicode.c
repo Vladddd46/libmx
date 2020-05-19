@@ -1,12 +1,10 @@
 #include "libmx.h"
 
+// Prints ASCII and multibyte characters on standard output.
+void mx_print_unicode(wchar_t c) {
+  char str[4];
 
- void mx_print_unicode(wchar_t c)
- {
-
- 	char str[4];
-
- 	if (c < 0x80) {
+  if (c < 0x80) {
       str[0] = ((c >> 0)  & 0x7F) | 0x00;
       str[1] = '\0';
       str[2] = '\0';

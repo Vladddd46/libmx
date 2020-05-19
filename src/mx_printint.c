@@ -1,23 +1,20 @@
 #include "libmx.h"
 
+// Prints int number on strout.
 void mx_printint(int n) {
     long a = n;
 
-    //проверка на 0
-    if(a == 0) {
+    // case with 0
+    if(a == 0) 
         mx_printchar('0');
-    }
-
-    //проверяем на отрицательное значение
+    // if num is neg. = print minus and mul. number with -1
     if(a < 0) {
         a *= -1;
         mx_printchar('-');
     }
-
     long num = 1;
-    while((a / num) > 0) {
+    while((a / num) > 0)
         num *= 10;
-    }
 
     long tmp;
     num /= 10;
@@ -28,6 +25,3 @@ void mx_printint(int n) {
         num /= 10;        
     }
 }
-
-
-
