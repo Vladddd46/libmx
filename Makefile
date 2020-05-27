@@ -40,7 +40,6 @@ SRC		=	mx_binary_search.c \
 	mx_push_back.c \
 	mx_push_front.c \
 	mx_quicksort.c \
-	mx_read_line.c \
 	mx_realloc.c \
 	mx_replace_substr.c \
 	mx_sort_list.c \

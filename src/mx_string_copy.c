@@ -1,5 +1,6 @@
 #include "libmx.h"
 
+// the same as mx_strdup().
 char *mx_string_copy(char *str) {
     char *copy = mx_strnew(mx_strlen(str));
 
