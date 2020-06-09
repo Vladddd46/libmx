@@ -59,7 +59,8 @@ SRC		=	mx_binary_search.c \
 	mx_strstr.c \
 	mx_strtrim.c \
 	mx_swap_char.c \
-	mx_string_copy.c
+	mx_string_copy.c\
+	mx_new_strarr.c\
 
 
 SRCS	=	$(addprefix $(SRCD)/, $(SRC))

@@ -37,6 +37,7 @@ char 		  **mx_strsplit( char *s, char c);
 char 		  *mx_itoa(int number);
 char 		  *mx_nbr_to_hex(unsigned long nbr);
 char 		  *mx_strcpy(char *dst,  char *src);
+char 		  **mx_new_strarr(int size);
 void 		  mx_foreach(int *arr, int size, void (*f)(int));
 void 		  mx_printchar(char c);
 void   		  mx_printint(int n);
