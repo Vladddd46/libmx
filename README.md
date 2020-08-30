@@ -1,5 +1,5 @@
 # libmx
-This is my own C library, 
+This is my own C library.
 In this lib I re-implemented many standart C functions and
 also some new useful functions.
 
