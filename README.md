@@ -1,7 +1,3 @@
-# libmx
-This is my own C library.
-In this lib I re-implemented many standart C functions and
-also some new useful functions.
-
-# Compile
-To compile lib just write `make`
+<h1>libmx</h1>
+<h2> My own re-implementation of standart C library.</h2>
+<h2>Write <b>make</b> to compile. After compilation <b>libmx.a</b> file appears.</h2>
